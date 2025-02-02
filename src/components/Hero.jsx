@@ -35,7 +35,7 @@ const Hero = () => {
                   Learn More <FaArrowRight className="ms-2" />
                 </Button>
                 <Button
-                  href="tel:3605054676"
+                  href="tel:17736730161"
                   variant="light"
                   size="lg"
                   className="btn-quote"

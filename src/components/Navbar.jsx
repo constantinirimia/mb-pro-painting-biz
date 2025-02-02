@@ -71,7 +71,7 @@ const Navbar = () => {
                 Get Free Quote
               </Nav.Link>
 
-              <Nav.Link href="tel:3605054676" className="contact-btn">
+              <Nav.Link href="tel:17736730161" className="contact-btn">
                 <FaPhone className="me-2" />
                 +1 (773) 673-0161
               </Nav.Link>
