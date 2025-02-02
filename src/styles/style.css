@@ -255,7 +255,7 @@ body {
 
 .btn-prev:hover,
 .btn-next:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background: #de0a0ab3;
 }
 
 #galleryModal .modal-content {
@@ -347,6 +347,22 @@ body {
 /* Why Choose Us Section Styles */
 .why-choose-us {
   background-color: #f8f9fa;
+  position: relative;
+}
+
+.whychooseus-section {
+  background-color: #f8f9fa;
+  position: relative;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.section-header {
+  margin-bottom: 3rem;
 }
 
 .feature-card {
@@ -357,6 +373,7 @@ body {
   height: 100%;
   transition: transform 0.3s ease;
   text-align: center;
+  position: relative;
 }
 
 .feature-card:hover {
@@ -391,9 +408,48 @@ body {
   margin-bottom: 0;
 }
 
+/* Arrows inside the Cards */
+.carousel-arrow {
+  font-size: 2rem;
+  color: #007bff;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel-arrow:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.carousel-left {
+  left: -25px;
+}
+
+.carousel-right {
+  right: -25px;
+}
+
+/* Make sure arrows do not overlap */
 @media (max-width: 768px) {
+  .carousel-arrow {
+    font-size: 1.5rem;
+  }
+
+  .carousel-left {
+    left: -15px;
+  }
+
+  .carousel-right {
+    right: -15px;
+  }
+
   .feature-card {
-    margin-bottom: 1rem;
+    padding: 1rem;
   }
 }
 
@@ -456,7 +512,7 @@ body {
 }
 
 .quote-modal .modal-header {
-  background-color: #f39c12;
+  background-color: hsl(197, 85%, 76%);
   color: #fff;
   border-bottom: none;
   font-size: 1.25rem;
@@ -471,24 +527,24 @@ body {
 }
 
 .quote-modal .btn-primary {
-  background-color: #f39c12;
-  border-color: #f39c12;
+  background-color: hsl(197, 85%, 76%);
+  border-color: hsl(197, 85%, 76%);
 }
 
 .quote-modal .btn-primary:hover {
-  background-color: #e67e22;
-  border-color: #e67e22;
+  background-color: hsl(197, 85%, 76%);
+  border-color: hsl(197, 85%, 76%);
 }
 
 .quote-modal .modal-content {
-  background-color: #fac65fe3;
-  color: white;
+  background-color: hsla(180, 10%, 92%, 0.749);
+  color: hsl(247, 98%, 48%);
   border-radius: 15px;
   padding: 40px;
 }
 
 .quote-modal h1 {
-  color: #77a6f7;
+  color: #098323;
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -848,7 +904,7 @@ body {
 }
 
 .btn-learn-more:hover {
-  background-color: #a39165;
+  background-color: hwb(50 0% 27%);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -861,7 +917,7 @@ body {
 }
 
 .btn-quote:hover {
-  background-color: white;
+  background-color: #37f907;
   color: var(--primary-color);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -899,13 +955,13 @@ body {
 .phone-number {
   font-size: 1.8rem;
   font-weight: 700;
-  color: white;
+  color: rgb(60, 111, 38);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .phone-number:hover {
-  color: var(--secondary-color);
+  color: blue;
 }
 
 @keyframes fadeInUp {
@@ -1076,5 +1132,236 @@ body {
     width: 60px;
     height: 60px;
     font-size: 1.2rem;
+  }
+}
+
+/* Add this CSS to your global stylesheet or the component-specific CSS file */
+/* Ensure the entire list and its contents are aligned to the left */
+.services-list-left {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default left padding */
+  margin: 0; /* Remove margin */
+}
+
+.services-list-left li {
+  font-size: 1rem; /* Set font size */
+  line-height: 1.5; /* Improve line spacing */
+  color: #333; /* Dark gray text color */
+  margin-bottom: 0.75rem; /* Add spacing between list items */
+  padding-left: 0; /* Ensure no left padding (aligned fully left) */
+  position: relative; /* For positioning pseudo elements */
+  text-align: left; /* Explicitly set text alignment to left */
+}
+
+.services-list-left li::before {
+  content: "•"; /* Custom bullet */
+  position: absolute; /* Position the bullet */
+  left: -1.5rem; /* Move the bullet to the left of the text */
+  color: #007bff; /* Blue bullet color */
+  font-size: 1.5rem; /* Bullet size */
+  top: 0.25rem; /* Adjust bullet position vertically */
+}
+
+h4 {
+  font-size: 1.25rem; /* Slightly larger title */
+  color: #007bff; /* Blue color for the title */
+  margin-bottom: 1rem; /* Add space below the title */
+  font-weight: 600; /* Bold title for emphasis */
+}
+
+/* Add some subtle hover effects on the list items */
+.services-list-left li:hover {
+  color: #007bff; /* Change text color to blue on hover */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.services-list-left li:hover::before {
+  color: #0056b3; /* Darker blue bullet on hover */
+}
+
+/* Gallery Button Hover Effect */
+.gallery-btn:hover {
+  background-color: hsl(191, 68%, 49%) !important;
+  border-color: white !important;
+}
+
+.free-estimate-btn:hover {
+  background-color: hsl(191, 68%, 49%) !important;
+  border-color: white !important;
+}
+
+/*
+Contact style
+*/
+
+/* Contact Section Styles */
+.contact {
+  background-color: rgba(243, 245, 236, 0.95);
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contact Info (Email & Phone) */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #555;
+  gap: 30px; /* Adds space between icons */
+}
+
+.contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.contact-info .contact-item i {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form .free-estimate-btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.contact-form .free-estimate-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.contact-form .free-estimate-btn:focus {
+  outline: none;
+}
+
+.contact-form:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Styles */
+.thank-you-modal .modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.thank-you-modal .modal-header {
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.thank-you-modal .modal-header .modal-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: hsl(202, 40%, 92%);
+}
+
+.thank-you-modal .modal-body p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.thank-you-modal .modal-footer {
+  border-top: 2px solid #f1f1f1;
+  display: flex;
+  justify-content: center;
+}
+
+.thank-you-modal .modal-footer .btn-primary {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.thank-you-modal .modal-footer .btn-primary:hover {
+  background-color: #218838;
+}
+
+.thank-you-modal .modal-footer .btn-primary:focus {
+  outline: none;
+}
+
+/* Footer (Copyright) */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.footer i {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form .free-estimate-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .thank-you-modal .modal-body p {
+    font-size: 1rem;
+  }
+
+  .thank-you-modal .modal-footer .btn-primary {
+    font-size: 1rem;
   }
 }

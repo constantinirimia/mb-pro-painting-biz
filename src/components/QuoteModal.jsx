@@ -5,11 +5,8 @@ import { Modal, Form, Button } from "react-bootstrap";
 const QuoteModal = ({ show, onHide, onSubmitSuccess }) => {
   const [formData, setFormData] = useState({
     fullName: "",
-    email: "",
     phone: "",
-    zipCode: "",
     service: "",
-    smsOptIn: false,
   });
 
   const handleSubmit = async (e) => {
@@ -62,17 +59,6 @@ const QuoteModal = ({ show, onHide, onSubmitSuccess }) => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3">
-            <Form.Control
-              type="email"
-              placeholder="Email address"
-              value={formData.email}
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
-            />
-          </Form.Group>
-
           <div className="row mb-3">
             <div className="col-md-6">
               <Form.Control
@@ -100,6 +86,7 @@ const QuoteModal = ({ show, onHide, onSubmitSuccess }) => {
               <option value="exterior">Exterior Painting</option>
               <option value="commercial">Cabinet Painting</option>
               <option value="commercial">Deck & Fence Painting</option>
+              <option value="commercial">Something else</option>
             </Form.Select>
           </Form.Group>
 

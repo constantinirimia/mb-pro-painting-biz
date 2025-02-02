@@ -5,7 +5,7 @@ export const galleryData = {
     description:
       "Our skilled team brings a touch of artistry to your space, transforming it into a masterpiece. Explore our top-notch interior painting solutions, blending style and quality.",
     services: [
-      "Preparation: caulking, filling and spackling, sanding, masking and covering surfaces",
+      "Preparation: caulking, spackling, sanding, and covering surfaces",
       "Minor drywall repair",
       "Brush & roll, spray finish",
       "Painting walls & ceilings",
@@ -36,7 +36,7 @@ export const galleryData = {
     services: [
       "Preparation: caulking, scraping, sanding, priming",
       "Pressure wash",
-      "Paint hardie, wood, vinyl, aluminum siding, stucco",
+      "Paint hardie, wood, vinyl, aluminum siding",
       "Paint exterior trim and door",
       "Apply solid, semi-solid and semi-transparent stain",
     ],
@@ -64,7 +64,6 @@ export const galleryData = {
     services: [
       "Cabinet sanding and refinishing",
       "Expert color matching and custom finishes",
-      "Quick turnaround times",
       "Protection of surrounding areas",
     ],
     images: [

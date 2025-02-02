@@ -87,7 +87,6 @@ const Testimonials = () => {
     <section className="testimonials-section py-5" id="testimonials">
       <Container>
         <div className="section-header text-center mb-5">
-          <h6 className="text-primary text-uppercase fw-bold">Testimonials</h6>
           <h2 className="section-title">What Our Clients Say</h2>
           <div className="section-divider"></div>
         </div>

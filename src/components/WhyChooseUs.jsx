@@ -1,6 +1,6 @@
 // src/components/WhyChooseUs.jsx
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMedal,
@@ -8,7 +8,6 @@ import {
   faPaintRoller,
   faStar,
   faClock,
-  faHandHoldingUsd,
   faHandHoldingDollar,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -49,28 +48,71 @@ const features = [
     description:
       "We respect your time and property, completing projects efficiently while maintaining our high standards. Clear communication and punctuality are our priorities.",
   },
-  // Add the rest of your features here
 ];
 
 const WhyChooseUs = () => {
+  const [visibleFeatures, setVisibleFeatures] = useState(0); // Start by showing the first 3 features
+
+  // Function to go to the next set of features
+  const nextFeatures = () => {
+    if (visibleFeatures + 3 < features.length) {
+      setVisibleFeatures(visibleFeatures + 3);
+    }
+  };
+
+  // Function to go to the previous set of features
+  const prevFeatures = () => {
+    if (visibleFeatures - 3 >= 0) {
+      setVisibleFeatures(visibleFeatures - 3);
+    }
+  };
+
   return (
-    <section className="why-choose-us py-5">
+    <section className="testimonials-section py-5" id="whychooseus">
       <Container>
-        <h2 className="text-center mb-5">
-          Why Choose MB Pro Painting Services?
-        </h2>
+        <div className="section-header text-center">
+          <h2 className="section-title mb-4">
+            Why choose MB Pro Painting Services?
+          </h2>
+          <div className="section-divider mb-5"></div>
+        </div>
+
         <Row className="g-4">
-          {features.map((feature, index) => (
-            <Col md={4} key={index}>
-              <div className="feature-card">
-                <div className="feature-icon">
-                  <FontAwesomeIcon icon={feature.icon} />
+          {/* Display the current set of 3 features */}
+          {features
+            .slice(visibleFeatures, visibleFeatures + 3)
+            .map((feature, index) => (
+              <Col md={4} key={index}>
+                <div className="feature-card">
+                  <div className="feature-icon">
+                    <FontAwesomeIcon icon={feature.icon} />
+                  </div>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                  {/* Left and Right Arrows on the Card */}
+                  {index === 0 && (
+                    <Button
+                      variant="link"
+                      onClick={prevFeatures}
+                      disabled={visibleFeatures === 0}
+                      className="carousel-arrow carousel-left"
+                    >
+                      ←
+                    </Button>
+                  )}
+                  {index === 2 && (
+                    <Button
+                      variant="link"
+                      onClick={nextFeatures}
+                      disabled={visibleFeatures + 3 >= features.length}
+                      className="carousel-arrow carousel-right"
+                    >
+                      →
+                    </Button>
+                  )}
                 </div>
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
-              </div>
-            </Col>
-          ))}
+              </Col>
+            ))}
         </Row>
       </Container>
     </section>
