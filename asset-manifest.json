@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mb-pro-painting-biz/static/css/main.3c163808.css",
-    "main.js": "/mb-pro-painting-biz/static/js/main.3a58b469.js",
+    "main.css": "/mb-pro-painting-biz/static/css/main.a0514912.css",
+    "main.js": "/mb-pro-painting-biz/static/js/main.be987330.js",
     "static/media/main_background.jpg": "/mb-pro-painting-biz/static/media/main_background.36b835ee5060e81bf12c.jpg",
     "index.html": "/mb-pro-painting-biz/index.html",
-    "main.3c163808.css.map": "/mb-pro-painting-biz/static/css/main.3c163808.css.map",
-    "main.3a58b469.js.map": "/mb-pro-painting-biz/static/js/main.3a58b469.js.map"
+    "main.a0514912.css.map": "/mb-pro-painting-biz/static/css/main.a0514912.css.map",
+    "main.be987330.js.map": "/mb-pro-painting-biz/static/js/main.be987330.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c163808.css",
-    "static/js/main.3a58b469.js"
+    "static/css/main.a0514912.css",
+    "static/js/main.be987330.js"
   ]
 }
