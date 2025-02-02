@@ -44,7 +44,7 @@ const Navbar = () => {
         <Container>
           <BootstrapNavbar.Brand href="#home">
             <img
-              src="/assets/img/logo/logo-154x149.png"
+              src={`${process.env.PUBLIC_URL}/assets/img/logo/logo-154x149.png`}
               alt="MB Pro Painting Services"
               className="navbar-logo"
             />
