@@ -22,7 +22,7 @@ const Hero = () => {
                 Welcome to MB Pro Painting Services, where your home gets the
                 perfect finish. With over 10 years of experience, we specialize
                 in interior and exterior painting, cabinet refinishing, and deck
-                & fence painting. Trust us to bring craftsmanship and quality to
+                & fence staining. Trust us to bring craftsmanship and quality to
                 every project.
               </p>
               <div className="hero-buttons">
