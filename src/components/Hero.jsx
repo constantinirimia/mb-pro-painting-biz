@@ -49,7 +49,7 @@ const Hero = () => {
                   <span className="phone-label">
                     Call Us Now for a FREE Estimate
                   </span>
-                  <a href="tel:3605054676" className="phone-number">
+                  <a href="tel:+17736730161" className="phone-number">
                     +1 773-673-0161
                   </a>
                 </div>
