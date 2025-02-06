@@ -50,3 +50,85 @@
 .btn-next {
   right: 10px;
 }
+
+/* src/components/Gallery/GalleryCard.css */
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.gallery-btn {
+  margin-top: auto; /* This ensures the button stays at the bottom */
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.service-image {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* src/components/Gallery/GalleryCard.css */
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures the card expands to fill its container */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ensures the body fills available space */
+}
+
+.gallery-btn {
+  margin-top: auto; /* This ensures the button stays at the bottom of the card */
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.service-image {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}

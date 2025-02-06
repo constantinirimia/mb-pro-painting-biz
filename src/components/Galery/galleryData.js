@@ -3,14 +3,8 @@ export const galleryData = {
   interior: {
     title: "Interior Painting",
     description:
-      "Our skilled team brings a touch of artistry to your space, transforming it into a masterpiece. Explore our top-notch interior painting solutions, blending style and quality.",
-    services: [
-      "Preparation: caulking, spackling, sanding, and covering surfaces",
-      "Minor drywall repair",
-      "Brush & roll, spray finish",
-      "Painting walls & ceilings",
-      "Painting trims and doors",
-    ],
+      "Preparation is the key factor in achieving a top-quality finish when it comes to interior painting. We begin by carefully preparing all surfaces to ensure the best results. This includes filling any cracks, holes, or imperfections in the walls, sanding surfaces smooth, and ensuring all areas are clean and dust-free. Before applying any paint, we carefully protect your floors, furniture, and other areas that should not be painted. This includes using drop cloths, plastic coverings, and painter's tape to keep everything neat and tidy throughout the process. We use only high-quality paints to ensure a smooth, durable finish that will last. Whether you're looking for a matte, satin, or glossy finish, we will help you select the best paint for your project. Each coat is applied with precision to provide a flawless result. Our team works efficiently and professionally to complete your interior painting project, leaving you with a beautifully painted space that exceeds your expectations ",
+    services: [],
     images: [
       `${process.env.PUBLIC_URL}/assets/img/interior/image1.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/interior/image2.jpg`,
@@ -32,14 +26,8 @@ export const galleryData = {
   exterior: {
     title: "Exterior Painting",
     description:
-      "Our skilled team delivers precision and quality that lasts. Enhance curb appeal and protect your investment. Explore vibrant color options and durable finishes.",
-    services: [
-      "Preparation: caulking, scraping, sanding, priming",
-      "Pressure wash",
-      "Paint hardie, wood, vinyl, aluminum siding",
-      "Paint exterior trim and door",
-      "Apply solid, semi-solid and semi-transparent stain",
-    ],
+      "We offer residential and commercial painting and staining services for trim, siding, windows, doors, shutters, and other structures. Similar to interior painting, the areas to be worked on must be properly prepared. Rotted wood is assessed, estimated, and repaired by one of our in-house carpenters. Every project is pressure washed with a bleach-based solution, if necessary, to remove dirt and mildew. Concrete areas that are not to be painted are covered with drop cloths, and bushes, plants, and flowers are protected from paint or damage. Windows and light fixtures are covered with plastic. Bare wood or new wood is primed with the highest quality primer to ensure proper adhesion. All necessary gaps around the home are caulked with 40-year siliconized acrylic caulk. In over 95% of our projects, we use 100% acrylic latex paint for the finish coat.",
+    services: [],
     images: [
       `${process.env.PUBLIC_URL}/assets/img/exterior/image1.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/exterior/image2.jpg`,
@@ -60,12 +48,8 @@ export const galleryData = {
   cabinets: {
     title: "Cabinet Painting",
     description:
-      "Transform your cabinets with expert painting and refinishing. We provide high-quality cabinet painting services that will enhance the appearance of your kitchen, bathroom, and more.",
-    services: [
-      "Cabinet sanding and refinishing",
-      "Expert color matching and custom finishes",
-      "Protection of surrounding areas",
-    ],
+      "The primary component of an updated kitchen is the cabinets. We offer a highly professional cabinet painting process, implementing a second-to-none method for transforming stained or painted cabinets into freshly repainted ones with a factory-like finish. The secret to achieving this lies in the preparation work and the application method of the paint used. After removing the doors and drawers, we carefully protect all areas that are not to be painted. Countertops, appliances, floors, ceilings, and other surfaces are meticulously covered to ensure no coatings touch these areas. Using an airless spray application, we apply a special primer that is appropriate for the substrate being primed. This primer seals out any stains within the wood or sealer. Afterward, we apply two coats of high-quality, 100% acrylic semi-gloss, gloss, or satin paint, leaving a uniform, factory-like finish. Additional options, such as crown molding, paneling, or trim, can be added to enhance the design depth.",
+    services: [],
     images: [
       `${process.env.PUBLIC_URL}/assets/img/cabinet/image1.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/cabinet/image2.jpg`,
@@ -85,14 +69,10 @@ export const galleryData = {
     ],
   },
   deckAndFence: {
-    title: "Deck & Fence Painting",
+    title: "Fence & Deck Staining",
     description:
-      "Protect and enhance your outdoor spaces with our professional deck and fence painting services. Our team offers expert staining and finishing for lasting beauty and durability.",
-    services: [
-      "Pressure washing and surface preparation",
-      "Custom staining and finishing",
-      "Long-lasting protection against the elements",
-    ],
+      "Before painting or staining a fence, we begin by pressure washing the surface. If the fence has been stained with a solid stain or paint and is flaking, we scrape the surface further to properly prepare it and then reapply a top coat of solid stain or paint. If the fence has been previously stained with a semi-transparent stain or simply sealed, we may reapply a semi-transparent stain or sealer.",
+    services: [],
     images: [
       `${process.env.PUBLIC_URL}/assets/img/deck_fence/image1.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/deck_fence/image2.jpg`,

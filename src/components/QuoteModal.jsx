@@ -85,7 +85,7 @@ const QuoteModal = ({ show, onHide, onSubmitSuccess }) => {
               <option value="interior">Interior Painting</option>
               <option value="exterior">Exterior Painting</option>
               <option value="commercial">Cabinet Painting</option>
-              <option value="commercial">Deck & Fence Painting</option>
+              <option value="commercial">Deck & Fence</option>
               <option value="commercial">Something else</option>
             </Form.Select>
           </Form.Group>

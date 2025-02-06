@@ -6,11 +6,14 @@ import Gallery from "./components/Galery/Gallery";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 
+import About from "./components/About";
+
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+      <About />
       <WhyChooseUs />
       <Gallery />
       <Testimonials />

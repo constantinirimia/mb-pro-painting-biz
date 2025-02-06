@@ -57,8 +57,11 @@ const Navbar = () => {
               <Nav.Link href="#home" className="nav-item">
                 Home
               </Nav.Link>
+              <Nav.Link href="#about" className="nav-item">
+                About
+              </Nav.Link>
               <Nav.Link href="#whychooseus" className="nav-item">
-                About Us
+                Why choose us
               </Nav.Link>
               <Nav.Link href="#services" className="nav-item">
                 Our Services
