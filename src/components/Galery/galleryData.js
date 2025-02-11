@@ -27,6 +27,7 @@ export const galleryData = {
       `${process.env.PUBLIC_URL}/assets/img/interior/image19.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/interior/image20.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/interior/image21.jpg`,
+      `${process.env.PUBLIC_URL}/assets/img/interior/image22.jpg`,
     ],
   },
   exterior: {
@@ -82,7 +83,6 @@ export const galleryData = {
       `${process.env.PUBLIC_URL}/assets/img/cabinet/image18.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/cabinet/image19.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/cabinet/image20.jpg`,
-      `${process.env.PUBLIC_URL}/assets/img/cabinet/image21.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/cabinet/image22.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/cabinet/image23.jpg`,
       `${process.env.PUBLIC_URL}/assets/img/cabinet/image24.jpg`,
